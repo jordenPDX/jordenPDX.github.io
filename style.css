@@ -1,0 +1,71 @@
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 16px 16px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav-item {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  font-family: system-ui;
+}
+
+.nav-link {
+  color: aliceblue;
+  padding: 16px 16px;
+  transition: 0.8s;
+}
+
+.nav-link:hover {
+  background-color: rgb(39, 39, 39);
+  color: rgb(105, 248, 248);
+  font-size: 25px;
+  border-radius: 35px;
+}
+
+.small-summary {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30vh;
+  width: 15em;
+  font-family: system-ui;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.about-sect {
+  display: block;
+  min-height: 100vh;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+h1 {
+  font-family: system-ui;
+  color: aliceblue;
+}
+
+p {
+  font-family: system-ui;
+  color: aliceblue;
+}
+
+.sect-container {
+  margin-top: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.sect-container > h1 {
+  padding-right: 30px;
+}
+
+.pic-of-me {
+  float: left;
+  width: 400px;
+  height: 300px;
+  padding-right: 30px;
+}
