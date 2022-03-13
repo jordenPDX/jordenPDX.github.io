@@ -1,21 +1,32 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(to right, #333, #1dbce1);
+}
+
 .nav-bar {
   list-style-type: none;
   margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding: 16px 16px;
   overflow: hidden;
-  background-color: #333;
+  background: transparent;
 }
 
 .nav-item {
   display: inline-block;
   color: black;
   text-align: center;
-  font-family: system-ui;
 }
 
 .nav-link {
   color: aliceblue;
   padding: 16px 16px;
+  font-family: system-ui;
   transition: 0.8s;
 }
 
@@ -26,24 +37,21 @@
   border-radius: 35px;
 }
 
-.small-summary {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30vh;
-  width: 15em;
-  font-family: system-ui;
-  font-size: 20px;
-  color: aliceblue;
-}
-
 .about-sect {
   display: block;
-  min-height: 100vh;
+  min-height: 150vh;
   padding-left: 15%;
   padding-right: 15%;
 }
 
-h1 {
+h2 {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 8vh;
   font-family: system-ui;
   color: aliceblue;
 }
@@ -53,13 +61,20 @@ p {
   color: aliceblue;
 }
 
-.sect-container {
-  margin-top: 100vh;
-  display: flex;
+.skills-sect {
+  margin-bottom: 150vh;
+  display: flexbox;
   justify-content: center;
+  margin: auto;
+  width: 50%;
 }
 
-.sect-container > h1 {
+.list {
+  font-family: system-ui;
+  color: aliceblue;
+}
+
+.about-container > h1 {
   padding-right: 30px;
 }
 
@@ -68,4 +83,27 @@ p {
   width: 400px;
   height: 300px;
   padding-right: 30px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 15px 15px;
+  background-color: rgb(138, 138, 138);
+  transition: 0.8s;
+}
+
+.card:hover {
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.4);
+  background-color: rgb(78, 78, 78);
+}
+
+.project-sect {
+  margin-top: 150vh;
+  margin-bottom: 50vh;
+  display: flexbox;
+  justify-content: center;
+  align-content: flex-start;
 }

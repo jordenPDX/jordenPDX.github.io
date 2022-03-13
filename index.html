@@ -7,30 +7,82 @@
     <title>jordenPDX.io</title>
     <link rel="stylesheet" href="style.css" />
 </head>
-<body style="background-color: #333;">
+<body>
     <nav>
         <ul class="nav-bar">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#previous-work">Previous Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
             <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <p class="small-summary">{insert some cool backround here}<br><br>
-        Hi there! I'm Jorden, I think web stuff is really cool.
-    </p>
-
+    <h1 class="header">About Me</h1>
     <section class="about-sect" id="about">
-        <div class="sect-container">
-            <h1>About Me</h1>
+        <div class="about-container">
             <img class="pic-of-me" src="PicOfJorden.jpg" alt="A picture of Jorden"> 
             <p>
-                Hi there! Thanks for checking out my page. Im Jorden, I am currentyl a senior at Portland State University and in the next few months
-                I will graduate with a degreen in Computer Science. I'm pretty new to the HTML, CSS, and Java Script scene, but after taking a class on web development,
-                I have found it to be very fun and engaging since I can visually see changes I make while I am making them which I think is so cool. I have not yet head
+                Hi there! Thanks for checking out my page. Im Jorden, I am currently a senior at Portland State University and in the next few months
+                I will graduate with a degree in Computer Science. I'm pretty new to the HTML, CSS, and Java Script scene, but after taking a class on web development,
+                I have found it to be very fun and engaging since I can visually see changes I make while I am making them which I think is so cool. I have not yet had
                 any industry experience yet, but am eager to find an opprotunity to gain industry knowledge and further my CS skills.
+            </p>
+        </div>
+    </section>
+
+    <h1 class="header">Skills/ Background</h1>
+    <section class="skills-sect" id="skills">
+        <div class="card">
+            <h2 class="header">Skills</h2>
+            <ul class="list">
+                <li>Strong background in linear algebra</li>
+                <li>proficient in C/C++ programming languages</li>
+                <li>Experience with Rust programming language</li>
+                <li>Experience with javascript</li>
+                <li>Insight into the Scrum and Agile development process</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2 class="header">Relevant Courses</h2>
+            <ul class="list">
+                <li>Modern Agile</li>
+                <li>Intro to Web Development</li>
+                <li>Programming in Rust</li>
+                <li>Algorithms and Complexity</li>
+                <li>Intro to Linear Algebra</li>
+                <li>Applied Linear Algebra</li>
+                <li>Data Structures</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="project-sect" id="projects">
+        <h1 class="header">Projects</h1>
+        <div class="card">
+            <h2 class="header">FRUPAL</h2>
+            <p>
+                This project is an attempt to make a rudimentary 2D sidescrolling game which its purpose was
+                for our group to gain practice with the Agile/ Scrum development process. So the project was focused on
+                working with other software developers rather than the code itself. <br><br>
+            </p>
+            <a class="nav-link" href="https://github.com/jordenPDX/FRUPAL" target="_blank">FRUPAL Repo</a>
+        </div> 
+        <div class="card">
+            <h2 class="header">Rust Blog Application</h2>
+            <p>
+                The purpose of this project was to practice with Rust's crate system which is a way for a programmer to
+                seperate parts of a program into simpler containers of code that can also be easily distributed and reused.
+                For this program I made use of the I/O crate that lets the user be able to interact with the program from
+                the command line.<br><br>
+            </p>
+            <a class="nav-link" href="https://github.com/jordenPDX/CS-410P-Term-Project" target="_blank">Rust Blog Repo</a>
+        </div>
+        <div class="card">
+            <h2 class="header">TPU Mersenne Capstone</h2>
+            <p>
+                For my senior capstone project I was apart of a team of 6 other software engineers that were tasked with researching
+                and developing a program that would utilize advanced linear algebra concepts such as the Fast Fourier Transform and
+                Irational Discrete Base Weighted Transform to 
             </p>
         </div>
     </section>
