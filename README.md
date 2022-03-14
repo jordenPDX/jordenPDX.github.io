@@ -12,4 +12,6 @@ All the sources are linked below:
 - [Source for the scrolling animation](https://alvarotrigo.com/blog/css-animations-scroll/)
 - [For making a transparent navbar](https://stackoverflow.com/questions/32946251/how-to-make-a-navbar-transparent)
 - [Opening the different repositories in a new tab](https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/)
+- [Official CSS Transition Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
+- [Shadows around the different cards](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
 
