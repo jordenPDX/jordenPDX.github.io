@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jordenPDX.io</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="menu-animations.js"></script>
 </head>
 <body>
     <nav>
@@ -17,8 +18,8 @@
         </ul>
     </nav>
 
-    <h1 class="header">About Me</h1>
     <section class="about-sect" id="about">
+        <h1 class="header">About Me</h1>
         <div class="about-container">
             <img class="pic-of-me" src="PicOfJorden.jpg" alt="A picture of Jorden"> 
             <p>
@@ -30,60 +31,88 @@
         </div>
     </section>
 
-    <h1 class="header">Skills/ Background</h1>
     <section class="skills-sect" id="skills">
-        <div class="card">
-            <h2 class="header">Skills</h2>
-            <ul class="list">
-                <li>Strong background in linear algebra</li>
-                <li>proficient in C/C++ programming languages</li>
-                <li>Experience with Rust programming language</li>
-                <li>Experience with javascript</li>
-                <li>Insight into the Scrum and Agile development process</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h2 class="header">Relevant Courses</h2>
-            <ul class="list">
-                <li>Modern Agile</li>
-                <li>Intro to Web Development</li>
-                <li>Programming in Rust</li>
-                <li>Algorithms and Complexity</li>
-                <li>Intro to Linear Algebra</li>
-                <li>Applied Linear Algebra</li>
-                <li>Data Structures</li>
-            </ul>
+        <div class="reveal">
+            <h1 class="header">Skills/ Background</h1>
+            <div class="card">
+                <h2 class="header">Skills</h2>
+                <ul class="list">
+                    <li>Strong background in linear algebra</li>
+                    <li>proficient in C/C++ programming languages</li>
+                    <li>Experience with Rust programming language</li>
+                    <li>Experience with javascript</li>
+                    <li>Insight into the Scrum and Agile development process</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2 class="header">Relevant Courses</h2>
+                <ul class="list">
+                    <li>Modern Agile</li>
+                    <li>Intro to Web Development</li>
+                    <li>Programming in Rust</li>
+                    <li>Algorithms and Complexity</li>
+                    <li>Intro to Linear Algebra</li>
+                    <li>Applied Linear Algebra</li>
+                    <li>Data Structures</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section class="project-sect" id="projects">
-        <h1 class="header">Projects</h1>
-        <div class="card">
-            <h2 class="header">FRUPAL</h2>
-            <p>
-                This project is an attempt to make a rudimentary 2D sidescrolling game which its purpose was
-                for our group to gain practice with the Agile/ Scrum development process. So the project was focused on
-                working with other software developers rather than the code itself. <br><br>
-            </p>
-            <a class="nav-link" href="https://github.com/jordenPDX/FRUPAL" target="_blank">FRUPAL Repo</a>
-        </div> 
-        <div class="card">
-            <h2 class="header">Rust Blog Application</h2>
-            <p>
-                The purpose of this project was to practice with Rust's crate system which is a way for a programmer to
-                seperate parts of a program into simpler containers of code that can also be easily distributed and reused.
-                For this program I made use of the I/O crate that lets the user be able to interact with the program from
-                the command line.<br><br>
-            </p>
-            <a class="nav-link" href="https://github.com/jordenPDX/CS-410P-Term-Project" target="_blank">Rust Blog Repo</a>
+        <div class="reveal">
+            <h1 class="header">Projects</h1>
+            <div class="card">
+                <h2 class="header">FRUPAL</h2>
+                <p>
+                    This project is an attempt to make a rudimentary 2D sidescrolling game which its purpose was
+                    for our group to gain practice with the Agile/ Scrum development process. So the project was focused on
+                    working with other software developers rather than the code itself. <br><br>
+                </p>
+                <a class="nav-link" href="https://github.com/jordenPDX/FRUPAL" target="_blank">FRUPAL Repo</a>
+            </div> 
+            <div class="card">
+                <h2 class="header">Rust Blog Application</h2>
+                <p>
+                    The purpose of this project was to practice with Rust's crate system which is a way for a programmer to
+                    seperate parts of a program into simpler containers of code that can also be easily distributed and reused.
+                    For this program I made use of the I/O crate that lets the user be able to interact with the program from
+                    the command line.<br><br>
+                </p>
+                <a class="nav-link" href="https://github.com/jordenPDX/CS-410P-Term-Project" target="_blank">Rust Blog Repo</a>
+            </div>
+            <div class="card">
+                <h2 class="header">TPU Mersenne Capstone</h2>
+                <p>
+                    For my senior capstone project I was apart of a team of 6 other software engineers that were tasked with researching
+                    and developing a program that would utilize advanced linear algebra concepts such as the Fast Fourier Transform and
+                    Irational Discrete Base Weighted Transform on Googles Cloud TPU technology in the hopes of speeding up the algorithm 
+                    to find a Mersenne Prime faster than exsisting Mersenne search programs. More information can be found 
+                    on the WIKI page in the repository linked below.<br><br>
+                </p>
+                <a class="nav-link" href="https://github.com/TPU-Mersenne-Prime-Search/TensorPrime" target="_blank">TPU Mersenne Repo</a>
+            </div>
         </div>
-        <div class="card">
-            <h2 class="header">TPU Mersenne Capstone</h2>
-            <p>
-                For my senior capstone project I was apart of a team of 6 other software engineers that were tasked with researching
-                and developing a program that would utilize advanced linear algebra concepts such as the Fast Fourier Transform and
-                Irational Discrete Base Weighted Transform to 
-            </p>
+    </section>
+
+    <section class="contact-sect" id="contact">
+        <div class="reveal">
+            <h2 class="header">Contact</h2>
+            <form class="form" action="">
+                <label class="form-element" for="name">Name:</label>
+                <input type="text" id="name" name="name" size="26"/><br><br>
+        
+                <label class="form-element" for="email">Email:</label>
+                <input type="email" id="email" email="email" size="26"/><br><br>
+
+                <label class="form-element" for="notes">Notes:</label>
+                <textarea id="notes" name="notes" rows="8" cols="40" placeholder="Anything you want me to know..."></textarea><br><br>
+        
+                <div class="button-container">
+                    <input class="btn-primary" type="submit" value="Submit">
+                    <input class="btn-secondary" type="reset" value="Reset">
+                </div>
+            </form>
         </div>
     </section>
 </body>
