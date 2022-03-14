@@ -15,6 +15,7 @@ body {
   padding: 16px 16px;
   overflow: hidden;
   background: transparent;
+  z-index: 1;
 }
 
 .nav-item {
@@ -39,13 +40,15 @@ body {
 
 .about-sect {
   display: block;
-  min-height: 150vh;
+  min-height: 100vh;
   padding-left: 15%;
   padding-right: 15%;
 }
 
 h2 {
   width: 100%;
+  font-family: system-ui;
+  color: aliceblue;
 }
 
 .header {
@@ -53,6 +56,7 @@ h2 {
   justify-content: center;
   margin-top: 8vh;
   font-family: system-ui;
+  font-size: xx-large;
   color: aliceblue;
 }
 
@@ -62,7 +66,7 @@ p {
 }
 
 .skills-sect {
-  margin-bottom: 150vh;
+  margin-bottom: 100vh;
   display: flexbox;
   justify-content: center;
   margin: auto;
@@ -87,11 +91,11 @@ p {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-top: 20px;
-  padding: 15px 15px;
-  background-color: rgb(138, 138, 138);
+  padding: 20px 20px;
+  background-color: rgb(37, 37, 37);
   transition: 0.8s;
 }
 
@@ -101,9 +105,98 @@ p {
 }
 
 .project-sect {
-  margin-top: 150vh;
+  margin-top: 100vh;
   margin-bottom: 50vh;
   display: flexbox;
   justify-content: center;
   align-content: flex-start;
+}
+
+.contact-sect {
+  margin-top: 100vh;
+  margin-bottom: 50vh;
+  display: flexbox;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.form {
+  border: solid 2px;
+  border-radius: 5px;
+  border-color: aliceblue;
+  display: flexbox;
+  width: fit-content;
+  margin: auto;
+  padding: 20px 20px;
+}
+
+.form-element {
+  text-align: left;
+  font-family: system-ui;
+  font-size: large;
+  color: aliceblue;
+  margin-left: 10px;
+  font-weight: bolder;
+  display: inline-block;
+  width: 100px;
+}
+
+#notes {
+  padding: 5px 5px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: rgb(0, 190, 0);
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  font-family: system-ui;
+  font-size: large;
+  padding: 10px 50px;
+  text-align: center;
+  transition: 0.8s;
+}
+
+.btn-primary:hover {
+  background-color: rgb(179, 248, 179);
+  color: black;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  font-family: system-ui;
+  font-size: large;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px 50px;
+  margin-left: 20px;
+  text-align: center;
+  transition: 0.8s;
+}
+
+.btn-secondary:hover {
+  background-color: black;
+  color: white;
+}
+
+textarea {
+  vertical-align: top;
 }
